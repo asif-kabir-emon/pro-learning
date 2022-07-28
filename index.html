@@ -44,22 +44,25 @@
               style="--bs-scroll-height: 100px"
             >
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Courses</a>
+                <a class="nav-link" href="#courses">Courses</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Deals</a>
+                <a class="nav-link" href="#deals">Deals</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Success</a>
+                <a class="nav-link" href="#registration">Registration</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">About</a>
+                <a class="nav-link" href="#success">Success</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Registration</a>
+                <a class="nav-link" href="#feedback">Feedbacks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -73,7 +76,7 @@
       <!-- navigation bar end  -->
     </header>
     <main class="container">
-      <div class="space"></div>
+      <div class="space" id="home"></div>
       <!-- slider start  -->
       <section>
         <div
@@ -143,7 +146,7 @@
       </section>
       <!-- slider end  -->
       <!-- popular course section start  -->
-      <section class="pt-5">
+      <section class="pt-5" id="courses">
         <div class="text-center">
           <h1>Discover Our Popular Courses</h1>
           <p class="text-muted">
@@ -337,7 +340,7 @@
       </section>
       <!-- popular course section end  -->
       <!-- Explore elearning section start  -->
-      <section class="mt-5">
+      <section class="mt-5" id="deals">
         <div class="card bg-light border-0 mb-3">
           <div class="row g-0">
             <div class="col-md-5">
@@ -389,7 +392,10 @@
       </section>
       <!-- Explore elearning section end  -->
       <!-- Register Section start  -->
-      <section class="mt-5 bg-info text-white rounded p-4 pt-lg-5">
+      <section
+        class="mt-5 bg-info text-white rounded p-4 pt-lg-5"
+        id="registration"
+      >
         <div class="row mx-md-5 my-md-3">
           <div
             class="col-lg-7 d-flex flex-column align-items-center align-items-lg-start"
@@ -487,7 +493,7 @@
       </section>
       <!-- Register Section end  -->
       <!-- successful student section start  -->
-      <section class="mt-5">
+      <section class="mt-5" id="success">
         <div class="py-2 row">
           <div class="col-lg-5 col-md-9 text-center text-md-start">
             <h1>Meet Our Successfull Students</h1>
@@ -565,7 +571,7 @@
       </section>
       <!-- successful student section end  -->
       <!-- student feedback start -->
-      <section class="mt-0">
+      <section class="mt-0" id="feedback">
         <div class="px-5 pt-5 text-center">
           <h1>Some Students Feedback</h1>
           <p class="text-muted pt-1">
@@ -657,9 +663,10 @@
           </button>
         </div>
       </section>
+      ß
       <!-- student feedback end -->
       <!-- Question section start -->
-      <section class="row pt-5">
+      <section class="row pt-5" id="about">
         <div class="col-lg-10 m-auto">
           <div class="text-center mt-2">
             <h1>Frequently Asked Questions</h1>
