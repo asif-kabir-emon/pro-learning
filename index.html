@@ -24,7 +24,7 @@
   <body>
     <header>
       <!-- navigation bar start  -->
-      <nav class="navbar navbar-expand-lg bg-white">
+      <nav class="navbar navbar-expand-lg fixed-top bg-white">
         <div class="container">
           <a class="navbar-brand" href="#">Pro Learning</a>
           <button
@@ -73,6 +73,7 @@
       <!-- navigation bar end  -->
     </header>
     <main class="container">
+      <div class="space"></div>
       <!-- slider start  -->
       <section>
         <div
@@ -164,7 +165,7 @@
                       style="object-fit: cover"
                     />
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-8 align-self-md-center">
                     <div
                       class="card-body d-flex flex-column justify-content-center"
                     >
@@ -193,7 +194,7 @@
                       style="object-fit: cover"
                     />
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-8 align-self-md-center">
                     <div
                       class="card-body d-flex flex-column justify-content-center"
                     >
@@ -222,7 +223,7 @@
                       style="object-fit: cover"
                     />
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-8 align-self-md-center">
                     <div
                       class="card-body d-flex flex-column justify-content-center"
                     >
@@ -251,7 +252,7 @@
                       style="object-fit: cover"
                     />
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-8 align-self-md-center">
                     <div
                       class="card-body d-flex flex-column justify-content-center"
                     >
@@ -280,7 +281,7 @@
                       style="object-fit: cover"
                     />
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-8 align-self-md-center">
                     <div
                       class="card-body d-flex flex-column justify-content-center"
                     >
@@ -309,7 +310,7 @@
                       style="object-fit: cover"
                     />
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-8 align-self-md-center">
                     <div
                       class="card-body d-flex flex-column justify-content-center"
                     >
@@ -342,8 +343,9 @@
             <div class="col-md-5">
               <img
                 src="images/working.png"
-                class="img-fluid rounded-start"
+                class="container-fluid p-0 h-100 rounded-start"
                 alt="..."
+                style="object-fit: cover"
               />
             </div>
             <div class="col-md-7 d-flex flex-column align-self-center rounded">
@@ -495,7 +497,7 @@
             </p>
           </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <!-- student - 1 -->
           <div class="col">
             <div class="card rounded">
@@ -553,7 +555,7 @@
             </div>
           </div>
         </div>
-        <div class="visible invisible-md visible-lg">
+        <div class="d-md-none d-lg-block">
           <div class="mt-4 mt-lg-4 text-center">
             <button class="btn btn-info fs-5 text-white px-4 py-2">
               View All
@@ -649,6 +651,11 @@
             </div>
           </div>
         </div>
+        <div class="text-center">
+          <button class="btn btn-info text-white fs-5 px-4 mt-3">
+            View All
+          </button>
+        </div>
       </section>
       <!-- student feedback end -->
       <!-- Question section start -->
@@ -676,7 +683,7 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseOne"
                   >
-                    Accordion Item #1
+                    What are the differences between grid and flex?
                   </button>
                 </h2>
                 <div
@@ -686,9 +693,15 @@
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the first item's accordion body.
+                    <b>
+                      Grid is made for two-dimensional layout while Flexbox is
+                      for one.
+                    </b>
+                    This means Flexbox can work on either row or columns at a
+                    time, but Grids can work on both. Flexbox, gives you more
+                    flexibility while working on either element (row or column).
+                    HTML markup and CSS will be easy to manage in this type of
+                    scenario.
                   </div>
                 </div>
               </div>
@@ -702,7 +715,7 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseTwo"
                   >
-                    Accordion Item #2
+                    What is the difference between bootstrap and tailwind?
                   </button>
                 </h2>
                 <div
@@ -712,10 +725,11 @@
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the second item's accordion body. Let's imagine this being
-                    filled with some actual content.
+                    The significant difference between Tailwind CSS and
+                    Bootstrap is that Tailwind offers predesigned widgets to
+                    build a site from scratch with fast UI development, while
+                    Bootstrap comes with a set of pre-styled responsive,
+                    mobile-first components that possess a definite UI kit.
                   </div>
                 </div>
               </div>
@@ -729,7 +743,7 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseThree"
                   >
-                    Accordion Item #3
+                    What is CSS box model?
                   </button>
                 </h2>
                 <div
@@ -739,13 +753,51 @@
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the third item's accordion body. Nothing more exciting
-                    happening here in terms of content, but just filling up the
-                    space to make it look, at least at first glance, a bit more
-                    representative of how this would look in a real-world
-                    application.
+                    <b
+                      >In CSS, the term "box model" is used when talking about
+                      design and layout.
+                    </b>
+                    <br />
+                    <br />
+                    The CSS box model is essentially a box that wraps around
+                    every HTML element. It consists of: margins, borders,
+                    padding, and the actual content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border rounded mt-2">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    What is a semantic tag?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <b>
+                      Semantic HTML or semantic markup is HTML that introduces
+                      meaning to the web page rather than just presentation.</b
+                    >
+                    <br /><br />
+                    For example, a <b>&lt;p&gt;</b> tag indicates that the
+                    enclosed text is a paragraph. This is both semantic and
+                    presentational because people know what paragraphs are, and
+                    browsers know how to display them. On the flip side of this
+                    equation, tags such as <b>&lt;b&gt;</b> and
+                    <b>&lt;i&gt;</b> are not semantic. They define only how the
+                    text should look (bold or italic), and don't provide any
+                    additional meaning to the markup.
                   </div>
                 </div>
               </div>

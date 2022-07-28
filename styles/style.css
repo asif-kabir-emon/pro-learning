@@ -1,3 +1,6 @@
+.space {
+  height: 60px;
+}
 .carousel-item::before {
   content: "";
   display: block;
