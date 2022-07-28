@@ -6,6 +6,7 @@
   bottom: 0;
   right: 0;
   left: 0;
+  border-radius: 5px;
   background: #000;
   background-size: cover;
   opacity: 0.4;
